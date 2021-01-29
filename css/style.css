@@ -945,4 +945,26 @@ input[type="checkbox"]:checked + label:before {
     margin: auto;
   }
 }
+
+.questions-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 800px;
+  margin: auto;
+}
+
+.questions__title {
+  font-size: 30px;
+}
+
+.questions__link {
+  font-size: 25px;
+  color: rgba(80, 128, 252, 0.8);
+}
 /*# sourceMappingURL=style.css.map */
