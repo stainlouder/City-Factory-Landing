@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sand Factory Landing</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <title>City Factory Landing</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <header class="header">
-    <div class="menu menu_active">
+    <div class="menu" id="menu">
         <div class="container">
             <nav class="menu__nav">
-                <a href="#" class="menu__link">Продукция</a>
-                <a href="#" class="menu__link">Каталог</a>
-                <a href="#" class="menu__link">Примеры работ</a>
-                <a href="#" class="menu__link">Примерка изображений</a>
-                <a href="#" class="menu__link">Стоимость дилерам</a>
-                <a href="#" class="menu__link">О пустыне</a>
+                <a href="#catalog" class="menu__link item">Каталог</a>
+                <a href="#features" class="menu__link item">Преимущества</a>
+                <a href="#price" class="menu__link item">Цены</a>
+                <a href="#steps" class="menu__link item">Этапы</a>
+                <a href="#company" class="menu__link item">О компании</a>
+                <a href="#contacts" class="menu__link item">Контакты</a>
             </nav>
         </div>
     </div>
-       <div class="navbar">
+       <div class="navbar" id="navbar">
            <div class="container">
                <div class="navbar-wrap">
                 <button class="menu-button navbar__menu-button">
@@ -30,20 +29,24 @@
                     <span class="menu-button__line"></span>
                 </button>
                 <div class="navbar-logo">
-                    <img width="200" src="img/logo/sand-factory_logo.png" alt="Site logo" aria-describedby="logo-description" class="logo__img" />
+                    <h1 class="site-title">
+                        <a href="#">
+                            <img width="200" src="img/logo/city-factory-logo.png" alt="Site logo" aria-describedby="logo-description" class="logo__img">
+                        </a>
+                    </h1>
                     <div class="visually-hidden" hidden id="logo-description">
-                      Site logo.
+                      Site logo
                     </div>
                 </div>
                 <div class="navbar__mobile">
-                    <a class="navbar__phone" href="tel:+7-----99">+7 123 456 78 90</a>
+                    <a class="navbar__phone" href="tel:+7 123 456 78 90">+7 123 456 78 90</a>
                     <span class="navbar__worktime navbar__small-text">без выходных</span>
                 </div>
                 <div class="navbar__landline">
-                 <a class="navbar__phone" href="tel:+7-----99">+7 098 765 43 21</a>
+                 <a class="navbar__phone" href="tel:+7 098 765 43 21">+7 098 765 43 21</a>
                  <a class="navbar__email navbar__small-text" href="mailto:ex@ex.com">ex@ex.com</a>
              </div>
-             <button class="button-o navbar__button">получить консультацию
+             <button class="button-o navbar__button">заказать консультацию
              </button>
                </div>
            </div>
@@ -51,10 +54,10 @@
        <div class="hero">
            <div class="container">
                <h1 class="hero__title">
-                   Гарантия высокого качества. Хорошие цены. Большой опыт. Тысячи довольных покупателей.
+                   Выгодная продажа и покупка<br> недвижимости всех типов
                </h1>
-               <span class="hero__subtitle">от 3000 р/м</span>
-               <button class="button hero__button">Заказать пустыню</button>
+               <span class="hero__subtitle">Собственный дом - это не только возможность поселиться в месте с очень благоприятными климатическими условиями, но и высокоэффективный инвестиционный инструмент.</span>
+               <button class="hero__button button">Больше информации</button>
            </div>
        </div>
    </header>
@@ -62,20 +65,20 @@
         <section class="offer">
             <div class="container">
                 <div class="offer__block offer-block offer-block_calc-bg">
-                    <h2 class="offer__title">Оставьте заявку на расчет</h2>
-                    <span class="offer__subtitle">и получите индивидуальное предложение</span>
+                    <h2 class="offer__title">Оставьте заявку</h2>
+                    <span class="offer__subtitle">на бесплатную консультацию</span>
                     <form action="" class="form form__offer">
                         <div class="form__row">
                             <div class="form__group">
-                                <label for="" class="form__label">Вид</label>
+                                <label for="" class="form__label">Город</label>
                                 <input type="text" class="input form__input">
                             </div>
                             <div class="form__group">
-                                <label for="" class="form__label">Удельный вес</label>
+                                <label for="" class="form__label">Район</label>
                                 <input type="text" class="input form__input">
                             </div>
                             <div class="form__group">
-                                <label for="" class="form__label">Цвет</label>
+                                <label for="" class="form__label">Дом</label>
                                 <input type="text" class="input form__input">
                             </div>
                         </div>
@@ -83,13 +86,13 @@
                             <div class="form__checkbox">
                                 <input class="checkbox" type="checkbox" id="install">    
                                 <label class="checkbox-label" for="install">
-                                    Монтаж
+                                    Новостройка
                                 </label>
                             </div>
                             <div class="form__checkbox">
                                 <input class="checkbox" type="checkbox" id="delivery">
                                 <label class="checkbox-label" for="delivery">
-                                    Доставка
+                                    Вторичка
                                 </label>
                             </div>
                         </div>
@@ -101,104 +104,109 @@
                                 <input type="tel" class="form__input input" placeholder="Ваш телефон">
                             </div>
                             <div class="form__group">
-                                <input type="submit" class="button form__button" value="Получить скидку">
+                                <input type="submit" class="button form__button" value="Отправить заявку">
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
-        <section class="features section">
-            <div class="container">
-                <h2 class="section-title section__title">Преимущества</h2>
-                <div class="features-block">
-                    <div class="features-block__item">
-                        <img src="img/features/feature.png" alt="Преимущество" class="features-block__img">
-                        <p class="features-block__text">Преимущество</p>
-                    </div>
-                    <div class="features-block__item">
-                        <img src="img/features/feature.png" alt="Преимущество" class="features-block__img">
-                        <p class="features-block__text">Преимущество</p>
-                    </div>
-                    <div class="features-block__item">
-                        <img src="img/features/feature.png" alt="Преимущество" class="features-block__img">
-                        <p class="features-block__text">Преимущество</p>
-                    </div>
-                    <div class="features-block__item">
-                        <img src="img/features/feature.png" alt="Преимущество" class="features-block__img">
-                        <p class="features-block__text">Преимущество</p>
-                    </div>
-                    <div class="features-block__item">
-                        <img src="img/features/feature.png" alt="Преимущество" class="features-block__img">
-                        <p class="features-block__text">Преимущество</p>
-                    </div>
-                    <div class="features-block__item">
-                        <img src="img/features/feature.png" alt="Преимущество" class="features-block__img">
-                        <p class="features-block__text">Преимущество</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section catalog">
+        <section class="section catalog" id="catalog">
             <div class="container">
                 <h2 class="section-title section__title">Каталог</h2>
+                <span class="section-line"></span>
                 <div class="catalog-block">
                     <div class="catalog-card catalog__card">
-                        <img class="catalog-card__image" src="img/catalog/catalog-image-1.jpg" width=570 alt=""><span class="catalog-card__tag">Красота песка</span>
+                        <img class="catalog-card__image" src="img/catalog/catalog-image-1.jpg" width=570 alt=""><span class="catalog-card__tag">Гонконг, Китай</span>
                         <div class="catalog-card__buttons">
-                            <button class="button-fitting catalog-card__button">Замер</button>
-                            <button class="button-add catalog-card__button">Заказать</button>
+                            <button class="button-fitting catalog-card__button">Подробнее</button>
+                            <button class="button-add catalog-card__button">Выбрать</button>
                             <button class="button-like"><img src="img/catalog/like.png" width=20 alt=""></button>
                         </div class="catalog-card__buttons">
                     </div>
                     <div class="catalog-card catalog__card">
-                        <img class="catalog-card__image" src="img/catalog/catalog-image-2.jpg" width=570 alt=""><span class="catalog-card__tag">Красота песка</span>
+                        <img class="catalog-card__image" src="img/catalog/catalog-image-2.jpg" width=570 alt=""><span class="catalog-card__tag">Сидней, Австралия</span>
                         <div class="catalog-card__buttons">
-                            <button class="button-fitting catalog-card__button">Замер</button>
-                            <button class="button-add catalog-card__button">Заказать</button>
+                            <button class="button-fitting catalog-card__button">Подробнее</button>
+                            <button class="button-add catalog-card__button">Выбрать</button>
                             <button class="button-like"><img src="img/catalog/like.png" width=20 alt=""></button>
                         </div class="catalog-card__buttons">
                     </div>
                     <div class="catalog-card catalog__card">
-                        <img class="catalog-card__image" src="img/catalog/catalog-image-3.jpg" width=570 alt=""><span class="catalog-card__tag">Красота песка</span>
+                        <img class="catalog-card__image" src="img/catalog/catalog-image-3.jpg" width=570 alt=""><span class="catalog-card__tag">Атрани, Италия</span>
                         <div class="catalog-card__buttons">
-                            <button class="button-fitting catalog-card__button">Замер</button>
-                            <button class="button-add catalog-card__button">Заказать</button>
+                            <button class="button-fitting catalog-card__button">Подробнее</button>
+                            <button class="button-add catalog-card__button">Выбрать</button>
                             <button class="button-like"><img src="img/catalog/like.png" width=20 alt=""></button>
                         </div class="catalog-card__buttons">
                     </div>
                     <div class="catalog-card catalog__card">
-                        <img class="catalog-card__image" src="img/catalog/catalog-image-4.jpg" width=570 alt=""><span class="catalog-card__tag">Красота песка</span>
+                        <img class="catalog-card__image" src="img/catalog/catalog-image-4.jpg" width=570 alt=""><span class="catalog-card__tag">Шеннинге, Швеция</span>
                         <div class="catalog-card__buttons">
-                            <button class="button-fitting catalog-card__button">Замер</button>
-                            <button class="button-add catalog-card__button">Заказать</button>
+                            <button class="button-fitting catalog-card__button">Подробнее</button>
+                            <button class="button-add catalog-card__button">Выбрать</button>
                             <button class="button-like"><img src="img/catalog/like.png" width=20 alt=""></button>
                         </div class="catalog-card__buttons">
                     </div>
                     <div class="catalog-card catalog__card">
-                        <img class="catalog-card__image" src="img/catalog/catalog-image-5.jpg" width=570 alt=""><span class="catalog-card__tag">Красота песка</span>
+                        <img class="catalog-card__image" src="img/catalog/catalog-image-5.jpg" width=570 alt=""><span class="catalog-card__tag">Скалловей, Шотандия</span>
                         <div class="catalog-card__buttons">
-                            <button class="button-fitting catalog-card__button">Замер</button>
-                            <button class="button-add catalog-card__button">Заказать</button>
+                            <button class="button-fitting catalog-card__button">Подробнее</button>
+                            <button class="button-add catalog-card__button">Выбрать</button>
                             <button class="button-like"><img src="img/catalog/like.png" width=20 alt=""></button>
                         </div class="catalog-card__buttons">
                     </div>
                     <div class="catalog-card catalog__card">
-                        <img class="catalog-card__image" src="img/catalog/catalog-image-6.jpg" width=570 alt=""><span class="catalog-card__tag">Красота песка</span>
+                        <img class="catalog-card__image" src="img/catalog/catalog-image-6.jpg" width=570 alt=""><span class="catalog-card__tag">Лондон, Великобритания</span>
                         <div class="catalog-card__buttons">
-                            <button class="button-fitting catalog-card__button">Замер</button>
-                            <button class="button-add catalog-card__button">Заказать</button>
+                            <button class="button-fitting catalog-card__button">Подробнее</button>
+                            <button class="button-add catalog-card__button">Выбрать</button>
                             <button class="button-like"><img src="img/catalog/like.png" width=20 alt=""></button>
                         </div class="catalog-card__buttons">
                     </div>
                 </div>
-                <div class="catalog__link">
-                <a href="#" class="button catalog__link-more button_lg">Смотреть весь каталог</a>
-                <span class="catalog__description">Товар не является бесконечным</span>
+                <button class="hero__button button">Смотреть каталог</button>
+            </div>
+        </section>
+        <section class="section features" id="features">
+            <div class="container">
+                <h2 class="section-title section__title features__title">Преимущества</h2>
+                <span class="section-line"></span>
+                <div class="features-block">
+                    <div class="features-block__item">
+                        <img src="img/features/safe.png" alt="Преимущество" class="features-block__img">
+                        <p class="features-block__text">Экономия</p>
+                        <p class="features-block__text">До 20% - столько в среднем экономят наши клиенты благодаря низкому % комиссии, скидкам и постоянным акциям</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/features/speedtimer.png" alt="Преимущество" class="features-block__img">
+                        <p class="features-block__text">Скорость проведения сделки</p>
+                        <p class="features-block__text">Мы собираем большую базу об всех объектах, что обеспечивает высокую скорость обработки информации</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/features/home.png" alt="Преимущество" class="features-block__img">
+                        <p class="features-block__text">Качество гарантий</p>
+                        <p class="features-block__text">Предоставляем реальное жилье с полным юридическим сопровождением, работаем только по договору</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/features/infrastructure.png" alt="Преимущество" class="features-block__img">
+                        <p class="features-block__text">Продвинутая инфраструктура</p>
+                        <p class="features-block__text">Кропотливо продуманная схема застройки окружающих объектов обеспечивает комфортное проживание</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/features/transport.png" alt="Преимущество" class="features-block__img">
+                        <p class="features-block__text">Доступность для транспорта</p>
+                        <p class="features-block__text">Большое количество подземных паркингов, а также широкие подъездные дороги не позволят вам опоздать</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/features/nature.png" alt="Преимущество" class="features-block__img">
+                        <p class="features-block__text">Красивые парки рядом</p>
+                        <p class="features-block__text">Близость лесных массивов обеспечит вам чистый воздух и ежедневные приятные прогулки</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="section news">
+        <section class="section news" id="news">
             <div class="container">
                 <div class="news__heading">
                     <h3 class="news__title">Полезная информация</h3>
@@ -210,7 +218,7 @@
                             <img src="img/news/news-1.jpg" width=280 alt="">
                         </div>
                         <div class="news-list__text">
-                            В журналах об этом не напишут
+                            Как выжить в большом городе
                         </div>
                     </div>
                     <div class="news-card news-list__card">
@@ -218,7 +226,7 @@
                             <img src="img/news/news-2.jpg" width=280 alt="">
                         </div>
                         <div class="news-list__text">
-                            Цвета настроения
+                            Идеальные формы города
                         </div>
                     </div>
                     <div class="news-card news-list__card">
@@ -226,7 +234,7 @@
                             <img src="img/news/news-3.jpg" width=280 alt="">
                         </div>
                         <div class="news-list__text">
-                            Свой собственный маленький оазис
+                            "Высота" - понятие относительное
                         </div>
                     </div>
                     <div class="news-card news-list__card">
@@ -234,175 +242,185 @@
                             <img src="img/news/news-4.jpg" width=280 alt="">
                         </div>
                         <div class="news-list__text">
-                            Современное искусство
+                            Современное искусство жить
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section price">
+        <section class="section price" id="price">
             <div class="container">
-                <h2 class="section-title section__title">
-                    Цены
-                </h2>
+                <h2 class="section-title section__title">Цены</h2>
+                <span class="section-line"></span>
                 <div class="price-block">
                     <div class="price-card price-block__card">
                         <div class="price-card__image">
-                            <img src="img/price/price-1.jpg" width=280 alt="">
+                            <img src="img/price/price-1.jpg" width=350 alt="">
                             <div class="price-card__text">
                                 <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">Лавовый песок</h4>
-                                    <span class="price-card__cost">от 3500 р/м2</span>
+                                    <h4 class="price-card__title">Квартира</h4>
+                                    <span class="price-card__cost">от 35 000 р/м2</span>
                                 </div>
-                                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                                <div class="price-card__button"><button class="button button-price">Оставить заявку</button></div>
                             </div>
                         </div>
                     </div>
                     <div class="price-card price-block__card">
                         <div class="price-card__image">
-                            <img src="img/price/price-2.jpg" width=280 alt="">
+                            <img src="img/price/price-2.jpg" width=350 alt="">
                             <div class="price-card__text">
                                 <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">Сеяная супесь</h4>
-                                    <span class="price-card__cost">от 3500 р/м2</span>
+                                    <h4 class="price-card__title">Таунхаус</h4>
+                                    <span class="price-card__cost">от 65 000 р/м2</span>
                                 </div>
-                                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                                <div class="price-card__button"><button class="button button-price">Оставить заявку</button></div>
                             </div>
                         </div>
                     </div>
                     <div class="price-card price-block__card">
                         <div class="price-card__image">
-                            <img src="img/price/price-3.jpg" width=280 alt="">
+                            <img src="img/price/price-3.jpg" width=350 alt="">
                             <div class="price-card__text">
                                 <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">Речной песок</h4>
-                                    <span class="price-card__cost">от 3500 р/м2</span>
+                                    <h4 class="price-card__title">Дом</h4>
+                                    <span class="price-card__cost">от 250 000 р/м2</span>
                                 </div>
-                                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                                <div class="price-card__button"><button class="button button-price">Оставить заявку</button></div>
                             </div>
                         </div>
                     </div>
                     <div class="price-card price-block__card">
                         <div class="price-card__image">
-                            <img src="img/price/price-4.jpg" width=280 alt="">
+                            <img src="img/price/price-4.jpg" width=350 alt="">
                             <div class="price-card__text">
                                 <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">Морской песок</h4>
-                                    <span class="price-card__cost">от 3500 р/м2</span>
+                                    <h4 class="price-card__title">Быстрая сделка</h4>
+                                    <span class="price-card__cost">от 10 000 р/м2</span>
                                 </div>
-                                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                                <div class="price-card__button"><button class="button button-price">Оставить заявку</button></div>
                             </div>
                         </div>
                     </div>
                     <div class="price-card price-block__card">
                         <div class="price-card__image">
-                            <img src="img/price/price-5.jpg" width=280 alt="">
+                            <img src="img/price/price-5.jpg" width=350 alt="">
                             <div class="price-card__text">
                                 <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">Крупный песок</h4>
-                                    <span class="price-card__cost">от 3500 р/м2</span>
+                                    <h4 class="price-card__title">Помощь с переездом</h4>
+                                    <span class="price-card__cost">от 5000 р</span>
                                 </div>
-                                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                                <div class="price-card__button"><button class="button button-price">Оставить заявку</button></div>
                             </div>
                         </div>
                     </div>
                     <div class="price-card price-block__card">
                         <div class="price-card__image">
-                            <img src="img/price/price-6.jpg" width=280 alt="">
+                            <img src="img/price/price-6.jpg" width=350 alt="">
                             <div class="price-card__text">
                                 <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">С примесью глины</h4>
-                                    <span class="price-card__cost">от 3500 р/м2</span>
+                                    <h4 class="price-card__title">Дополнительные услуги</h4>
+                                    <span class="price-card__cost">от 3500 р</span>
                                 </div>
-                                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="price-card price-block__card">
-                        <div class="price-card__image">
-                            <img src="img/price/price-7.jpg" width=280 alt="">
-                            <div class="price-card__text">
-                                <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">Белый песок</h4>
-                                    <span class="price-card__cost">от 3500 р/м2</span>
-                                </div>
-                                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="price-card price-block__card">
-                        <div class="price-card__image">
-                            <img src="img/price/price-8.jpg" width=280 alt="">
-                            <div class="price-card__text">
-                                <div class="price-card__pricetag">
-                                    <h4 class="price-card__title">Мытый песок</h4>
-                                    <span class="price-card__cost">от 3500 р/м2</span>
-                                </div>
-                                <div class="price-card__button"><button class="button">Оставить заявку</button></div>
+                                <div class="price-card__button"><button class="button button-price">Оставить заявку</button></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-steps">
+        <section class="section section-steps" id="steps">
             <div class="container">
-                <h2 class="section-title section__title">
-                    Этапы</h2>
+                <h2 class="section-title section__title">Этапы</h2>
+                <span class="section-line"></span>
                 <div class="steps-block">
                     <div class="step">
                         <img src="img/steps/step-1.png" alt="" class="step__image">
                         <h4 class="step__title">Шаг 1</h4>
-                        <p class="step__text">Вы делаете первый шаг правой ногой</p>
+                        <p class="step__text">Вы оставляете заявку на сайте</p>
                     </div>
                     <div class="step">
                         <img src="img/steps/step-2.png" alt="" class="step__image">
                         <h4 class="step__title">Шаг 2</h4>
-                        <p class="step__text">Затем повторяете то же самое с другой ногой</p>
+                        <p class="step__text">Связываемся с Вами для уточнения деталей</p>
                     </div>
                     <div class="step">
                         <img src="img/steps/step-3.png" alt="" class="step__image">
                         <h4 class="step__title">Шаг 3</h4>
-                        <p class="step__text">Вспоминаете свой первый шаг</p>
+                        <p class="step__text">Подбираем наиболее подходящие варианты</p>
                     </div>
                     <div class="step">
                         <img src="img/steps/step-4.png" alt="" class="step__image">
                         <h4 class="step__title">Шаг 4</h4>
-                        <p class="step__text">Чувствуете себя уверенее</p>
+                        <p class="step__text">Вы определяетесь с тем, что Вам нравится</p>
                     </div>
                     <div class="step">
                         <img src="img/steps/step-5.png" alt="" class="step__image">
                         <h4 class="step__title">Шаг 5</h4>
-                        <p class="step__text">Можете пойти куда угодно</p>
+                        <p class="step__text">Подписываем договор</p>
                     </div>
                     <div class="step">
                         <img src="img/steps/step-6.png" alt="" class="step__image">
                         <h4 class="step__title">Шаг 6</h4>
-                        <p class="step__text">Однако до луны придется лететь</p>
+                        <p class="step__text">Вы хозяин прекрасного дома</p>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="section before">
+            <div class="container">
+                <h2 class="section-title section__title">До и после</h2>
+                <span class="section-line"></span>
+                <div class="before-slider-wrap">
+                     <div class="before-slider">
+                         <div class="before-slider__item">
+                             <div class="before-after">
+                                 <img src="img/before-slider/before-1.jpg" alt="">
+                                 <img src="img/before-slider/after-1.jpg" alt="">
+                             </div>
+                         </div>
+                         <div class="before-slider__item">
+                             <div class="before-after">
+                                 <img src="img/before-slider/before-2.jpg" alt="">
+                                 <img src="img/before-slider/after-2.jpg" alt="">
+                             </div>
+                         </div>
+                         <div class="before-slider__item">
+                             <div class="before-after">
+                                 <img src="img/before-slider/before-3.jpg" alt="">
+                                 <img src="img/before-slider/after-3.jpg" alt="">
+                             </div>
+                         </div>
+                     </div>
+                     <div class="before-slider-arrows">
+                         <button class="arrow arrow-back">
+                             <img src="img/before-slider/back.png" width=30 alt="">
+                         </button>
+                         <button class="arrow arrow-next">
+                             <img src="img/before-slider/next.png" width=30 alt="">
+                         </button>
+                     </div>
                 </div>
             </div>
         </section>
         <section class="section reviews">
             <div class="container">
-                <h2 class="section-title section__title">
-                    Отзывы наших клиентов
-                </h2>
+                <h2 class="section-title section__title">Отзывы наших клиентов</h2>
+                <span class="section-line"></span>
                 <div class="reviews-slider">
                     <div class="reviews-slider__item">
-                        <div class="reviews-slider__text">Здесь будет расположен текст моего отзыва, который я пока еще не оставил, т.к. не пользовался данным продуктом.</div>
+                        <div class="reviews-slider__text">Уже очень долгое время хотели с мужем переехать поближе к природе. Муж капризный, очень любит комфорт. С помощью вашей компании удалось найти решение, которое утроило бы нас обоих. Спасибо!</div>
                         <img src="img/reviews/review-1.png" alt="" class="reviews-slider__image">
-                        <span class="reviews-slider__name">Mr. Noname<br> Sity N.</span>
+                        <span class="reviews-slider__name">Марина Збирева<br> Город N</span>
                     </div>
                     <div class="reviews-slider__item">
-                        <div class="reviews-slider__text">Здесь будет расположен текст моего отзыва, который я пока еще не оставил, т.к. не пользовался данным продуктом.</div>
+                        <div class="reviews-slider__text">Всегда хотел добротный дом для большой семьи, как в старые времена! Собрался строить свой, однако наткнулся на рекламу вашей компании и с этог момента я счастлив! Даже и не подозревал сколько хорошей недвижимости есть на рынке.</div>
                         <img src="img/reviews/review-1.png" alt="" class="reviews-slider__image">
-                        <span class="reviews-slider__name">Ms. Noname<br> Sity N.</span>
+                        <span class="reviews-slider__name">Петр Аркасмов<br> Город N</span>
                     </div>
                     <div class="reviews-slider__item">
-                        <div class="reviews-slider__text">Здесь будет расположен текст моего отзыва, который я пока еще не оставил, т.к. не пользовался данным продуктом.</div>
+                        <div class="reviews-slider__text">Давно искал хорошую просторную квартиру в центре, так как очень много работы и везде успеть крайне сложно. Был очень доволен услугами, оказанными вашей компанией. Вы сэкономили мне кучу времени и нервов.</div>
                         <img src="img/reviews/review-1.png" alt="" class="reviews-slider__image">
-                        <span class="reviews-slider__name">Mr. Noname<br> Sity N.</span>
+                        <span class="reviews-slider__name">Григорий Синицин<br> Город N</span>
                     </div>
                 </div>
             </div>
@@ -410,15 +428,15 @@
         <section class="offer">
             <div class="container">
                 <div class="offer__block offer-block offer-block_price-bg">
-                    <h2 class="offer__title">Ищете где дешевле и лучше?</h2>
-                    <span class="offer__subtitle">Мы поможем вам подобрать лучшее</span>
+                    <h2 class="offer__title">Дом вашей мечты уже ждет вас!</h2>
+                    <span class="offer__subtitle">получите персональное предложение</span>
                     <form action="" class="form form__offer">
                         <div class="form__row">
                             <div class="form__group">
                                 <input type="text" class="input form__input" placeholder="Вяше имя">
                             </div>
                             <div class="form__group">
-                                <input type="text" class="input form__input" placeholder="Ваш телефон">
+                                <input type="tel" class="input form__input" placeholder="Ваш телефон">
                             </div>
                             <div class="form__group">
                                 <input type="text" class="input form__input" placeholder="Ваша цена">
@@ -426,7 +444,7 @@
                         </div>
                         <div class="form__row">
                             <div class="form__group">
-                                <input type="submit" class="button form__button" value="Получить рассчет со скидкой">
+                                <input type="submit" class="button form__button" value="Получить скидку">
                             </div>
                             <div class="form__group">
                                 <span class="form__policy">Ваши данные надежно защищены. Наши сейфы хранят их не более минуты.</span>
@@ -436,23 +454,23 @@
                 </div>
             </div>
         </section>
-        <section class="section factory">
+        <section class="section company" id="company">
             <div class="container">
-                <h2 class="section-title section__title">О производстве</h2>
+                <h2 class="section-title section__title">О компании</h2>
+                <span class="section-line"></span>
             </div>
-            <div class="factory-block">
-                <div class="factory-block__image">
-                    <img src="img/factory/factory-1.jpg" alt="">
-                </div>
-                <div class="factory-block__text">
-                    <p>Здесь расположена наша фабрика. Построена из самого лучшего песчанника и известняка. Таким образом мы хотим продемонстрировать вам каким прекрасным может получиться здание из песка. Не стоит его недооценивать.</p>
-                    <p>А если вы уже оценили по достинству нашу компанию, материал и перспективы сотрудничества, то посмотрите пожалуйста внимательно - возможно, вы пропустили пару офферов наверху. Будьте пожалуйста более внимательны.</p>
+            <div class="company-block">
+                <div class="company-block__text">
+                    <p>City Factory — это высокопрофессиональные дипломированные специалисты в различных областях, связанных с продажей, оценкой, проектированием, подбором недвижимости. Компания постоянно инвестирует средства в повышение квалификации своих сотрудников, развитие методологии, новые профессиональные и информационные технологии.</p>
+                    <p>City Factory уникальна по своей сути. Это не просто риэлтерское агентство, это агентство, предлагающее полный комплекс услуг по продаже и покупке объектов жилой недвижимости. Мы предлагаем только индивидуальный подход. Этот рынок слишком разнообразный и сложный, но с помощью наших специалистов вы всегда примете верное решение.</p>
+                    <p>Мы тщательно изучаем все объекты продажи недвижимости. Мы тщательно следим за планами правительства по развитию города, знаем все о строительстве новых домов, развитии районов и инфраструктуры. Наши специалисты оценивают все возможные риски и изучают преимущества. В результате мы создаем пул только качественных и надежных объектов. Мы внимательно относимся к потребностям каждого клиента для того, чтобы предложить ему действительно подходящий вариант.</p>
                 </div>
             </div>
         </section>
-        <section class="section contacts">
+        <section class="section contacts" id="contacts">
             <div class="container">
                 <h2 class="section-title section__title">Контакты</h2>
+                <span class="section-line"></span>
                 <div class="contacts-block">
                     <div class="contacts-block__item">
                         <img src="img/contacts/phone.png" alt="" class="contacts__image">
@@ -475,8 +493,7 @@
                 </div>
             </div>
         </section>
-        <div class="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A73e02af7d2382d2c640b39807154476658e36e37934777a995e387c468e2cc99&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=falce"></script>
+        <div class="map" id="map">
         </div>
         <section class="section questions">
             <div class="container">
@@ -487,8 +504,31 @@
             </div>
         </section>
    </main>
-   <footer>
-
-   </footer>
+   <footer class="footer">
+        <div class="container">
+            <div class="footer-block">
+                <div class="footer__title">
+                    <h4 class="site-title">
+                        <a href="#">
+                            <img width="200" src="img/logo/city-factory-logo-white.png" alt="Site logo" aria-describedby="logo-description" class="logo__img">
+                        </a>
+                    </h4>
+                    <div class="visually-hidden" hidden id="logo-description">
+                      Site logo
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    <a href="#" class="footer__phone">+7 123 456 78 90</a>
+                    <a href="#" class="footer__mail">ex@ex.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   <script src="js/jquery.event.move.js"></script>
+   <script src="js/jquery.twentytwenty.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/jquery.maskedinput.js"></script>
 </body>
 </html>

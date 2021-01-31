@@ -1,18 +1,23 @@
 @font-face {
-    font-family: 'Helvetica Neue Cyr Roman';
-    src: url('../fonts/HelveticaNeueCyr-Roman.eot');
-    src: url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
-    url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+    font-family: 'Roboto Regular';
+    font-display: swap;
+    src: url('Roboto-Regular.eot');
+    src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Roboto-Regular.woff') format('woff'),
+    url('Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
 @font-face {
-    font-family: 'Helvetica Neue Cyr Medium';
-    src: url('../fonts/HelveticaNeueCyr-Medium.eot');
-    src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
-    url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-family: 'Roboto Bold';
+    font-display: swap;
+    src: url('Roboto-Bold.eot');
+    src: url('Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Roboto-Bold.woff') format('woff'),
+    url('Roboto-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    }
+    @mixin bold {
+        font-family: 'Roboto Bold', sans-serif;
     }

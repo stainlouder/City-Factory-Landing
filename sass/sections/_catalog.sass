@@ -4,6 +4,7 @@
         display: flex
         flex-wrap: wrap
         justify-content: space-between
+        margin-bottom: 40px
     &__card
         margin-bottom: 30px
     &-card
@@ -21,6 +22,14 @@
             font-size: 11px
             text-transform: uppercase
             border: none
+            &:hover
+                cursor: pointer
+                background: rgba($interface-color-blue, .8)
+                box-shadow: 0 15px 20px rgba($interface-color-blue, .4)
+                color: white
+                transform: translateY(-2px)
+            &:focus
+                outline: none
         &__tag
             position: absolute
             top: 10px
@@ -29,17 +38,13 @@
             font-size: 12px
             text-transform: uppercase
             color: #ffffff
-            background-color: $interface-color-blue
+            background-color: rgba($interface-color-blue, .8)
         &__image
             display: block
+            margin: auto
     &__link
         text-align: center
         margin-top: 60px
-    &__link-more
-        display: inline-block
-        margin-bottom: 25px
-    &__description
-        display: block
 @media (max-width: 1199px)
     .catalog
         &-block

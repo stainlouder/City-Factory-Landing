@@ -1,19 +1,25 @@
 .hero
-    background: #f1f1f1 url('../img/hero/hero.jpg') no-repeat center
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1) ), url('../img/hero/hero.jpg') no-repeat center
     background-size: cover
     padding-top: 200px
     padding-bottom: 270px
     &__title
-        max-width: 550px
-        margin-bottom: 40px
-        font-size: 30px
-        text-align: justify
+        margin: 0 0 40px 20px
+        font-size: 45px
+        text-align: center
         color: #ffffff
+        text-transform: uppercase
     &__subtitle
         display: block
-        margin-bottom: 70px
-        font-size: 30px
+        margin: 0 0 70px 20px
+        font-size: 25px
+        text-align: center
         color: #ffffff
+        text-transform: uppercase
+    &__button
+        display: block
+        margin-left: auto
+        margin-right: auto
 @media (max-width: 991px)
     background-size: 100%
     background-position: top right

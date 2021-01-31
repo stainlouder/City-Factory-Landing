@@ -1,33 +1,72 @@
 body
-    font-family: HelveticaNeueCyr-Roman
+    font-family: 'Roboto Regular', sans-serif
     color: $text-color
 img
     max-width: 100%
 .section
-    padding: 100px 0
+    padding: 80px 0
     &-title
         font-size: 30px
+        +bold
         text-align: center
         text-transform: uppercase
-    &__title
-        margin-bottom: 100px
+        margin-bottom: 10px
+        padding: 10px
+    &-line
+        display: block
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 80px
+        width: 70px
+        height: 2px
+        background-color: #000
 .button-o
-    border: 3px solid $interface-color-blue
-    padding: 17px 22px
-    background-color: rgba($interface-color-blue, 0.05)
-    font-size: 12px
-    color: $text-color
-    text-transform: uppercase
     text-decoration: none
-.button
-    padding: 25px 45px
-    border: none
+    display: inline-block
+    width: 250px
+    height: 60px
+    border: 1px
+    border-radius: 3px
+    margin: 10px 20px
+    font-size: 15px
+    text-align: center
+    font-weight: 600
+    color: #ffffff
     text-transform: uppercase
-    text-decoration: none
-    background-color: $interface-color-blue
-    color: #fff
+    background: rgba($interface-color-yellow, .9)
+    box-shadow: 0 5px 55px rgba(0, 0, 0, .1)
+    transition: .3s
     &:hover
         cursor: pointer
+        background: rgba($interface-color-blue, .9)
+        box-shadow: 0 5px 30px rgba($interface-color-blue, .4)
+        color: white
+        transform: translateY(-2px)
+    &:focus
+        outline: none
+.button
+    text-decoration: none
+    display: inline-block
+    width: 300px
+    height: 80px
+    border: 1px
+    border-radius: 5px
+    margin: 10px 20px
+    font-size: 20px
+    text-align: center
+    font-weight: 600
+    color: #ffffff
+    background: $interface-color-yellow
+    box-shadow: 0 5px 55px rgba(0, 0, 0, .1)
+    transition: .3s
+    &:hover
+        cursor: pointer
+        background: rgba($interface-color-blue, .9)
+        box-shadow: 0 5px 30px rgba($interface-color-blue, .4)
+        color: white
+        transform: translateY(-2px)
+    &:focus
+        outline: none
     &-fitting
         background-color: #fff
     &-add
@@ -41,6 +80,18 @@ img
         width: 30px
         background-color: $interface-color-blue
         border: none
+        &:hover
+            cursor: pointer
+            background: rgba($interface-color-blue, .8)
+            box-shadow: 0 15px 20px rgba($interface-color-blue, .4)
+            color: white
+            transform: translateY(-2px)
+        &:focus
+            outline: none
+    &-price
+        width: 200px
+        height: 60px
+        font-size: 15px
 .bg-secondary
     background: #000000
 .input
@@ -55,14 +106,15 @@ input[type="checkbox"]
     &-label
         display: flex
         align-items: center
-        margin-right: 100px
+        margin: 10px 100px 0 0
+        font-size: 20px
         &:hover
             cursor: pointer
         &:before
             content: ''
             height: 30px
             width: 30px
-            border: 1px solid #dddddd
+            border: 2px solid #dddddd
             margin-right: 20px
 @media (max-width: 576px)
     .button
